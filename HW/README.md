@@ -54,14 +54,23 @@
 
 ```python
 path: 数据集路径
+    
 epsilon: Lambda矩阵防止除0错误的分母附加值
+    
 sigma: 生成S时正态分布核的参数
-wcycles: 优化Y需要的循环次数
+    
+wcycles: 优化W需要的循环次数
+    
 ycycles: 优化Y需要的循环次数
+    
 alpha: 超参数
+    
 beta: 超参数
+    
 c: 标签类别个数
+    
 k: 特征提取的个数
+    
 name: 保存Y迭代的值，用于画图
 ```
 
@@ -123,6 +132,7 @@ def plot_alpha_beta():  # 遍历 alpha beta 的入口函数
     
 # 函数调用方法举例：
 plot_Y_loss()  # 绘制给定 alpha 和 beta 时 Y 迭代的 Loss
+
 plot_alpha_beta()  # 遍历不同 alpha 和 beta 的组合，绘制其聚类效果的 NMI 和 ACC 指标
 ```
 
